@@ -1,0 +1,4 @@
+model factory.mod;
+option solver minos;
+solve;
+display XPrety, XKatowniki, XCeowniki;
