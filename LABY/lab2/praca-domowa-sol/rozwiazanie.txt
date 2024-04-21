@@ -1,0 +1,7 @@
+MINOS 5.51: optimal solution found.
+2 iterations, objective 275571.4286
+XPrety = 0
+XKatowniki = 3000
+XCeowniki = 2228.57
+Profit = 275571
+
