@@ -1,0 +1,36 @@
+set Plants := "GARY" "CLEV" "PITT";
+set Storages := "FRA" "DET" "LAN" "WIN" "STL" "FRE" "LAF";
+
+param MaxProductionPerPlant := GARY 1400 CLEV 2600 PITT 2900;
+param StorageRequirementsPerStorage :=
+   FRA 900
+   DET 1200
+   LAN 600
+   WIN 400
+   STL 1700
+   FRE 1100
+   LAF 1000;
+
+param TransportCosts := 
+    GARY FRA 39
+    CLEV FRA 27
+    PITT FRA 24
+    GARY DET 14
+    CLEV DET 9
+    PITT DET 14
+    GARY LAN 11
+    CLEV LAN 12
+    PITT LAN 17
+    GARY WIN 14
+    CLEV WIN 9
+    PITT WIN 13
+    GARY STL 16
+    CLEV STL 26
+    PITT STL 28
+    GARY FRE 82
+    CLEV FRE 95
+    PITT FRE 99
+    GARY LAF 8
+    CLEV LAF 17
+    PITT LAF 20
+    
