@@ -1,0 +1,39 @@
+# # plik danych dla zadania planowania produkcji
+
+# # definicje zbior�w indeksowych
+# set SKUTERY := GL SL;
+# set ODDZIALY := montownia lakiernia;
+
+# # wielko�ci pracoch�onno�ci
+# param praca: GL SL :=
+#    montownia 2 5
+#    lakiernia 3 3;
+
+# # maksymalne moce oddzia��w
+# param: moc :=
+#    montownia 151
+#    lakiernia 181;
+
+# # zyski jednostkowe
+# param: cena :=
+#    GL 2
+#    SL 3;
+
+set PRODUKTY := "prety" "katowniki" "ceowniki";
+
+param PRODUKTY_CENY
+    prety 32
+    katowniki 51
+    ceowniki 55;
+
+param PRODUKTY_MAX
+    prety 4000
+    katowniki 3000
+    ceowniki 2500;
+
+param PRODUKTY_W_H
+    prety 200
+    katowniki 140
+    ceowniki 120;
+
+param MAX_GODZINY := 40;

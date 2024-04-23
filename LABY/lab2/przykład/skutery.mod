@@ -1,11 +1,11 @@
 # plik modelu dla zadania planowania produkcji
 
-# deklaracje zbiorów i parametrów zawartych w pliku danych
+# deklaracje zbiorï¿½w i parametrï¿½w zawartych w pliku danych
 set SKUTERY;
 set ODDZIALY;
 
-param praca {ODDZIALY, SKUTERY} >= 0;
-param moc {ODDZIALY} >= 0;
+param praca {ODDZIALY, SKUTERY} >= 0; # 1 index i 2 index
+param moc {ODDZIALY} >= 0; # kazdy odzial ma moc
 param cena {SKUTERY} >= 0;
 
 # zmienne
@@ -16,7 +16,7 @@ var wol {ODDZIALY} >= 0;
 # funkcja celu dla maksymalizacji zysku
 maximize FunCeluZysk: sum {k in SKUTERY} cena[k] * prod[k];
 
-# ograniczenia obci¹¿enia
+# ograniczenia obciï¿½ï¿½enia
 s.t. OgrObc {o in ODDZIALY}:
     obc[o] = sum {k in SKUTERY} praca[o,k] * prod[k];
 
