@@ -1,0 +1,18 @@
+set SCREW_TYPES := "A" "B" "C";
+set MACHINES := "1" "2" "3";
+
+param SCREW_ORDERS :=
+    "A" 1000
+    "B" 1500
+    "C" 2000;
+
+param MACHINE_PROD_SCREW_TIME :=
+    "1" "A" 0.12
+    "1" "B" 0.13
+    "1" "C" 0.90
+    "2" "A" 0.13
+    "2" "B" 0.12
+    "2" "C" 0.12
+    "3" "A" 0.70
+    "3" "B" 0.80
+    "3" "C" 0.12

@@ -1,12 +1,12 @@
 set Screws = "A" "B" "C";
 set Machines = 1 2 3;
 
-param Requirements := 
+param Requirements :=
     A 1000
     B 1500
     C 2000;
 
-param ManufacturingSpeeds := 
+param ManufacturingSpeeds :=
     1 A 0.12
     1 B 0.13
     1 C 0.90
@@ -16,5 +16,3 @@ param ManufacturingSpeeds :=
     3 A 0.70
     3 B 0.80
     3 C 0.12;
-
-

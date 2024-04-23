@@ -1,0 +1,5 @@
+model z4.mod;
+data z4.dat;
+option solver cplex;
+solve;
+display TOTAL_PRODUCTION_TIME, PRODUCTION;
