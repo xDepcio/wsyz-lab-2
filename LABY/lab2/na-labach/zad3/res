@@ -1,0 +1,16 @@
+MINOS 5.51: ignoring integrality of 21 variables
+MINOS 5.51: optimal solution found.
+15 iterations, objective 196200
+TRANSPORT_COST = 196200
+
+STEAL_TRANSPORTED [*,*] (tr)
+:     CLEV   GARY   PITT    :=
+DET   1200      0      0
+FRA      0      0    900
+FRE      0   1100      0
+LAF    400    300    300
+LAN    600      0      0
+STL      0      0   1700
+WIN    400      0      0
+;
+

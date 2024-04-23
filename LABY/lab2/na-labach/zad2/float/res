@@ -1,0 +1,19 @@
+MINOS 5.51: optimal solution found.
+7 iterations, objective 27462.885
+TOTAL_COST = 27462.9
+
+set BREWERIES := Haarlem Eindhoven;
+
+BEER_TRANSPORTED :=
+Eindhoven Amersfoort    31
+Eindhoven Amsterdam      0
+Eindhoven Breda         16
+Eindhoven 'Den Bosch'   12
+Eindhoven Gouda          2.77
+Haarlem   Amersfoort     0
+Haarlem   Amsterdam     28
+Haarlem   Breda          0
+Haarlem   'Den Bosch'    0
+Haarlem   Gouda         19.23
+;
+

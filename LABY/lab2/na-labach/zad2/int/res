@@ -1,0 +1,20 @@
+CPLEX 22.1.1.0: optimal integer solution; objective 27529.7
+1 MIP simplex iterations
+0 branch-and-bound nodes
+TOTAL_COST = 27529.7
+
+set BREWERIES := Haarlem Eindhoven;
+
+BEER_TRANSPORTED :=
+Eindhoven Amersfoort    31
+Eindhoven Amsterdam      0
+Eindhoven Breda         16
+Eindhoven 'Den Bosch'   12
+Eindhoven Gouda          3
+Haarlem   Amersfoort     0
+Haarlem   Amsterdam     28
+Haarlem   Breda          0
+Haarlem   'Den Bosch'    0
+Haarlem   Gouda         19
+;
+

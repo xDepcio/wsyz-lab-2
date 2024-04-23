@@ -1,0 +1,18 @@
+CPLEX 22.1.1.0: optimal integer solution within mipgap or absmipgap; objective 2715.384615
+10 MIP simplex iterations
+0 branch-and-bound nodes
+absmipgap = 0.268911, relmipgap = 9.90324e-05
+TOTAL_PRODUCTION_TIME = 2715.38
+
+PRODUCTION :=
+'1' A     59
+'1' B      0
+'1' C   2000
+'2' A    353
+'2' B      0
+'2' C      0
+'3' A    588
+'3' B   1500
+'3' C      0
+;
+
