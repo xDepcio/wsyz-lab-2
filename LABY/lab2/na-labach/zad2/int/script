@@ -1,0 +1,5 @@
+model breweries.mod;
+data breweries.dat;
+option solver cplex;
+solve;
+display TOTAL_COST, BREWERIES, BEER_TRANSPORTED;

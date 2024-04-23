@@ -1,0 +1,5 @@
+model factory.mod;
+data factory.dat;
+option solver cplex;
+solve;
+display PRODUKTY_PLAN_PRODUKCJI, TOTAL_PROFIT;

@@ -1,0 +1,5 @@
+model factories.mod;
+data factories.dat;
+option solver minos;
+solve;
+display TRANSPORT_COST, STEAL_TRANSPORTED;

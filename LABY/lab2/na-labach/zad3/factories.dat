@@ -1,0 +1,66 @@
+
+# set BREWERIES := "Haarlem" "Eindhoven";
+# set WHOLESALERS := "Amsterdam" "Breda" "Gouda" "Amersfoort" "Den Bosch";
+
+# param BREWERY_CAPABILITIES :=
+#     Haarlem   47.23
+#     Eindhoven 63.5;
+
+# param WHOLESALER_REQUIREMENTS :=
+#     Amsterdam   28
+#     Breda       16
+#     Gouda       22
+#     Amersfoort  31
+#     'Den Bosch' 12;
+
+# param TRANSPORT_COST :=
+#     Haarlem   Amsterdam   131.5
+#     Haarlem   Breda       405
+#     Haarlem   Gouda       188.5
+#     Haarlem   Amersfoort  396
+#     Haarlem   'Den Bosch' 485
+#     Eindhoven Amsterdam   554
+#     Eindhoven Breda       351
+#     Eindhoven Gouda       479
+#     Eindhoven Amersfoort  366
+#     Eindhoven 'Den Bosch' 155.6;
+
+set STEAL_FACTORIES := "GARY" "CLEV" "PITT";
+set STORAGES := "FRA" "DET" "LAN" "WIN" "STL" "FRE" "LAF";
+
+param FACTORIES_CAPABILITIES :=
+    GARY   1400
+    CLEV   2600
+    PITT   2900;
+
+param STORAGES_NEEDS :=
+    FRA  900
+    DET  1200
+    LAN  600
+    WIN  400
+    STL  1700
+    FRE  1100
+    LAF  1000;
+
+param TRANSPORTATION_COSTS :=
+    GARY FRA  39
+    GARY DET  14
+    GARY LAN  11
+    GARY WIN  14
+    GARY STL  16
+    GARY FRE  82
+    GARY LAF  8
+    CLEV FRA  27
+    CLEV DET  9
+    CLEV LAN  12
+    CLEV WIN  9
+    CLEV STL  26
+    CLEV FRE  95
+    CLEV LAF  17
+    PITT FRA  24
+    PITT DET  14
+    PITT LAN  17
+    PITT WIN  13
+    PITT STL  28
+    PITT FRE  99
+    PITT LAF  20;

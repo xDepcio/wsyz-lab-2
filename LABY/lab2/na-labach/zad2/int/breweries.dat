@@ -1,0 +1,26 @@
+
+set BREWERIES := "Haarlem" "Eindhoven";
+set WHOLESALERS := "Amsterdam" "Breda" "Gouda" "Amersfoort" "Den Bosch";
+
+param BREWERY_CAPABILITIES :=
+    Haarlem   47.23
+    Eindhoven 63.5;
+
+param WHOLESALER_REQUIREMENTS :=
+    Amsterdam   28
+    Breda       16
+    Gouda       22
+    Amersfoort  31
+    'Den Bosch' 12;
+
+param TRANSPORT_COST :=
+    Haarlem   Amsterdam   131.5
+    Haarlem   Breda       405
+    Haarlem   Gouda       188.5
+    Haarlem   Amersfoort  396
+    Haarlem   'Den Bosch' 485
+    Eindhoven Amsterdam   554
+    Eindhoven Breda       351 
+    Eindhoven Gouda       479 
+    Eindhoven Amersfoort  366
+    Eindhoven 'Den Bosch' 155.6; 

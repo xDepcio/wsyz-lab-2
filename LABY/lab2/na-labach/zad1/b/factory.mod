@@ -1,0 +1,47 @@
+# set PRODUKTY;
+
+# param PRODUKTY_W_H {PRODUKTY};
+# param PRODUKTY_CENY {PRODUKTY};
+# param PRODUKTY_MAX {PRODUKTY};
+
+# param MAX_GODZINY;
+
+# var PRODUCTS_PRODUCTION{p in PRODUKTY} integer >= 0;
+
+# maximize Profit:
+#     sum {p in PRODUKTY} PRODUKTY_CENY[p] * PRODUCTS_PRODUCTION[p];
+
+# subject to Time{p in PRODUKTY}:
+#     1/PRODUKTY_W_H[p] * PRODUCTS_PRODUCTION[p] <= MAX_GODZINY;
+
+# subject to ProduktyLimit {p in PRODUKTY}:
+#     PRODUCTS_PRODUCTION[p] <= PRODUKTY_MAX[p];
+
+set PRODUKTY;
+
+param PRODUKTY_W_H{PRODUKTY};
+
+param PRODUKTY_CENY{PRODUKTY};
+
+param PRODUKTY_MAX{PRODUKTY};
+
+param MAX_GODZINY;
+
+# Plan the production for each product
+var PRODUKTY_PLAN_PRODUKCJI{PRODUKTY, t in 1..MAX_GODZINY};
+var PRODUKTY_PLAN_BINARNY{p in PRODUKTY, t in 1..MAX_GODZINY} binary;
+
+subject to DWA_NA_RAZ{t in 1..MAX_GODZINY}:
+    sum{p in PRODUKTY} PRODUKTY_PLAN_BINARNY[p, t] <= 2;
+
+subject to NIE_PRODUKUJE_GDY_NIE_DZIALA{p in PRODUKTY, t in 1..MAX_GODZINY}:
+    PRODUKTY_PLAN_PRODUKCJI[p, t] <= PRODUKTY_W_H[p] * PRODUKTY_PLAN_BINARNY[p, t];
+
+maximize TOTAL_PROFIT:
+    sum{p in PRODUKTY, t in 1..MAX_GODZINY} PRODUKTY_CENY[p] * PRODUKTY_PLAN_PRODUKCJI[p, t];
+
+subject to LIMIT_WYGODNIOWY{p in PRODUKTY}:
+    sum{t in 1..MAX_GODZINY} PRODUKTY_PLAN_BINARNY[p, t] <= PRODUKTY_MAX[p];
+
+subject to LIMIT_GODZINOWY:
+    sum{p in PRODUKTY, t in 1..MAX_GODZINY} PRODUKTY_PLAN_BINARNY[p, t] <= MAX_GODZINY;
