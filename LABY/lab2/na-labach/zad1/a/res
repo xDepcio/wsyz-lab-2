@@ -1,0 +1,11 @@
+MINOS 5.51: ignoring integrality of 6 variables
+MINOS 5.51: optimal solution found.
+2 iterations, objective 275340
+PRODUCTION [*] :=
+ ceowniki  2280
+katowniki  2940
+    prety     0
+;
+
+TOTAL_PROFIT = 275340
+

@@ -2,4 +2,4 @@ model factory.mod;
 data factory.dat;
 option solver cplex;
 solve;
-display PRODUKTY_PLAN_PRODUKCJI, TOTAL_PROFIT;
+display PRODUCTION_PLAN_PRODUCTS, PRODUCTION_PLAN_BINARY, TOTAL_PROFIT;

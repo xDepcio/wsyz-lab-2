@@ -1,19 +1,19 @@
 
-set PRODUKTY := "prety" "katowniki" "ceowniki";
+set PRODUCTS := "prety" "katowniki" "ceowniki";
 
-param PRODUKTY_CENY :=
-    prety 32
-    katowniki 51
-    ceowniki 55;
+param MACHINE_CAPACITY :=
+    prety       200
+    katowniki   140
+    ceowniki    120;
 
-param PRODUKTY_MAX :=
-    prety 4000
-    katowniki 3000
-    ceowniki 2500;
+param SELLING_PRICE :=
+    prety       32
+    katowniki   51
+    ceowniki    55;
 
-param PRODUKTY_W_H :=
-    prety 200
-    katowniki 140
-    ceowniki 120;
+param WEEKLY_LIMIT :=
+    prety       4000
+    katowniki   3000
+    ceowniki    2500;
 
-param MAX_GODZINY := 40;
+param MAX_HOURS := 40;

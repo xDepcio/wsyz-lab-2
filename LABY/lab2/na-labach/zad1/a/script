@@ -2,4 +2,4 @@ model factory.mod;
 data factory.dat;
 option solver minos;
 solve;
-display PRODUCTS_PRODUCTION, Profit;
+display PRODUCTION, TOTAL_PROFIT;
