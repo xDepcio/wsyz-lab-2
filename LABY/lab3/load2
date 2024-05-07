@@ -1,0 +1,5 @@
+model zad4.mod;
+data net1-my.dat;
+option solver cplex;
+solve;
+display Times, StartTimes;
