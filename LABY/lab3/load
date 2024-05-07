@@ -1,0 +1,5 @@
+model zad3.mod;
+data net1-my.dat;
+option solver cplex;
+solve;
+display Total_Time, StartTimes;
