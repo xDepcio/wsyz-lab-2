@@ -1,0 +1,46 @@
+data;
+
+set OPERATIONS := Fundamenty A_sciany A_dach A_okna A_wykon
+					B_sciany B_dach B_okna B_wykon
+					C_sciany C_dach C_okna C_wykon
+					D_sciany D_dach D_okna D_wykon
+					E_sciany E_dach E_okna E_wykon
+					Alejki Zielen Ostatnie_prace ;
+
+set PREDECESORS := 	(Fundamenty, A_sciany) (Fundamenty, B_sciany)
+					(A_sciany, A_dach) (A_dach, C_sciany) (A_dach, A_okna) (A_okna, A_wykon)
+	             	(B_sciany, B_dach) (B_dach, C_sciany) (B_dach, B_okna) (B_okna, B_wykon)
+	             	(C_sciany, C_dach) (C_dach, C_okna) (C_dach, E_sciany) (C_okna, C_wykon)
+	             	(D_sciany, D_dach) (C_dach, D_sciany) (D_dach, D_okna) (D_okna, D_wykon)
+	             	(E_sciany, E_dach) (E_dach, E_okna) (E_okna, E_wykon)
+	             	(A_okna, Alejki) (B_okna, Alejki) (C_okna, Alejki) (D_okna, Alejki) (E_okna, Alejki)
+             		(A_okna, Zielen) (B_okna, Zielen) (C_okna, Zielen) (D_okna, Zielen) (E_okna, Zielen)
+             		(Alejki, Ostatnie_prace) (Zielen, Ostatnie_prace)
+             		(A_wykon, Ostatnie_prace) (B_wykon, Ostatnie_prace)	(C_wykon, Ostatnie_prace) (D_wykon, Ostatnie_prace) (E_wykon, Ostatnie_prace)
+             		;
+
+param: time :=
+	Fundamenty  50
+	A_sciany    60
+	A_dach      40
+	A_okna      20
+	A_wykon     70
+	B_sciany			50
+	B_dach			40
+	B_okna			30
+	B_wykon			50
+	C_sciany			50
+	C_dach			40
+	C_okna			30
+	C_wykon			50
+	D_sciany			70
+	D_dach			50
+	D_okna			30
+	D_wykon			30
+	E_sciany			70
+	E_dach			50
+	E_okna			30
+	E_wykon			30
+	Alejki		25
+	Zielen		20
+	Ostatnie_prace		30 ;
