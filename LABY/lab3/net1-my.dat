@@ -25,22 +25,22 @@ param: time :=
 	A_dach      40
 	A_okna      20
 	A_wykon     70
-	B_sciany			50
-	B_dach			40
-	B_okna			30
-	B_wykon			50
-	C_sciany			50
-	C_dach			40
-	C_okna			30
-	C_wykon			50
-	D_sciany			70
-	D_dach			50
-	D_okna			30
-	D_wykon			30
-	E_sciany			70
-	E_dach			50
-	E_okna			30
-	E_wykon			30
+	B_sciany    50
+	B_dach		40
+	B_okna		30
+	B_wykon		50
+	C_sciany	50
+	C_dach		40
+	C_okna		30
+	C_wykon		50
+	D_sciany	70
+	D_dach		50
+	D_okna		30
+	D_wykon		30
+	E_sciany	70
+	E_dach		50
+	E_okna		30
+	E_wykon		30
 	Alejki		25
 	Zielen		20
 	Ostatnie_prace		30 ;
